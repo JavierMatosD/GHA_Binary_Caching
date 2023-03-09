@@ -29,4 +29,4 @@ jobs:
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
       - name: Install ports
         run: |
-          ./vcpkg-exe install --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite" --triplet=x64-linux
+          ./vcpkg-exe install --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite" --triplet=x64-linux -DVCPKG_ROOT=vcpkg/
