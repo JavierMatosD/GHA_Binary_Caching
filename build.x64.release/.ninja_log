@@ -290,3 +290,5 @@
 350647	350739	1678387752522682665	liblocale-resources.a	f8a4443901d8657b
 344758	351075	1678387752858682637	CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o	c4c6c93be1de6310
 351075	351523	1678387753306682600	vcpkg	496639e19ab9d03a
+41	420	0	/workspaces/GHA_Binary_Caching/build.x64.release/CMakeFiles/cmake.verify_globs	bc3c349f45f5782b
+91	736	1678399977259398389	vcpkg	496639e19ab9d03a
