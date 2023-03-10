@@ -28,7 +28,8 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install ports
-        env:
-          ACTIONS_RUNTIME_TOKEN: ${{ env.ACTIONS_RUNTIME_TOKEN }}
+      - uses: actions/labeler@v4
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ./vcpkg/vcpkg install --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite" --triplet=x64-linux
