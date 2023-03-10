@@ -2,27 +2,17 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
   build_linux_static:
     name: x64-linux
     runs-on: ubuntu-22.04
-    env:
-      VCPKG_GHA_WRITE_KEY: vcpkg-latest
-      VCPKG_GHA_READ_KEY: vcpkg-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: CHECK VERSION 
+        uses: actions/checkout@v3
         with:
           submodules: true
       - run: ./vcpkg-exe --version
-      - uses: actions/github-script@v6
+      - name: Export ACTION_RUNTIME
+        uses: actions/github-script@v6
         with:
           script: |
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
@@ -30,4 +20,4 @@ jobs:
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install ports
         run: |
-          ./vcpkg/vcpkg install --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite" --triplet=x64-linux
+          ./vcpkg/vcpkg install --binarysource="clear;x-gha,readwrite"
