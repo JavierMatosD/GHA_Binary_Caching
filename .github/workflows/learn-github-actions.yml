@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} is testing Binary Caching with Github Actions
 on: [push]
 jobs:
   build_linux_static:
@@ -11,7 +11,7 @@ jobs:
         with:
           submodules: true
       - run: ./vcpkg-exe --version
-      - name: Export ACTION_RUNTIME
+      - name: Export ACTION_RUNTIME_TOKEN
         uses: actions/github-script@v6
         with:
           script: |
