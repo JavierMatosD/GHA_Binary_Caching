@@ -1,5 +1,5 @@
 name: learn-github-actions
-run-name: ${{ github.actor }} is testing Binary Caching with Github Actions
+run-name: Testing Binary Caching with Github Actions
 on: [push]
 jobs:
   build_linux_static:
@@ -18,7 +18,7 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
       - run: cp ./vcpkg-exe vcpkg/vcpkg
-      - name: Install Ports
+      - name: Install Port
         run: |
-          ./vcpkg/vcpkg install zlib --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite"
+          ./vcpkg/vcpkg install zlib --binarysource="clear;x-gha,readwrite"
 
