@@ -20,4 +20,4 @@ jobs:
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install ports
         run: |
-          ./vcpkg/vcpkg install --binarysource="clear;x-gha,readwrite"
+          ./vcpkg/vcpkg install --binarysource="clear;x-gha,readwrite" --debug
