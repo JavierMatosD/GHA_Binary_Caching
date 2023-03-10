@@ -26,8 +26,9 @@ jobs:
         with:
           script: |
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
-            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install ports
+        env:
+          ACTIONS_RUNTIME_TOKEN: ${{ env.ACTIONS_RUNTIME_TOKEN }}
         run: |
           ./vcpkg/vcpkg install --binarysource="clear;x-gha,${{ env.ACTIONS_CACHE_URL }},readwrite" --triplet=x64-linux
