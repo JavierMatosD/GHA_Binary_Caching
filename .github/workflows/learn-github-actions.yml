@@ -11,7 +11,6 @@ jobs:
         with:
           submodules: true
       - run: ./vcpkg-exe --version
-      - name: Export ACTION_RUNTIME_TOKEN
         uses: actions/github-script@v6
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install Port
