@@ -21,6 +21,6 @@ jobs:
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
       - run: cp ./vcpkg-exe vcpkg/vcpkg
-      - name: Install Boost
+      - name: Install Boost Using Binary Cache
         run: |
           ./vcpkg/vcpkg install boost --binarysource="clear;x-gha,readwrite"
