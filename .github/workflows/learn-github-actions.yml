@@ -5,6 +5,9 @@ jobs:
   build_linux_static:
     name: x64-linux
     runs-on: ubuntu-latest
+    env:
+      VCPKG_GHA_WRITE_KEY: ${{ runner.os }}-${{ github.run_id }}
+      VCPKG_GHA_READ_KEY: ${{ runner.os }}-${{ github.run_id }}
     steps:
       - name: Check Version
         uses: actions/checkout@v3
