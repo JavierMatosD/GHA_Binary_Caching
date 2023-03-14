@@ -23,6 +23,7 @@ jobs:
 
           ## Don't fail workflow
           echo "Deleting caches..."
+          for cacheKey in $cacheKeysForPR
           do
               gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
               echo "deleted $cacheKey"
