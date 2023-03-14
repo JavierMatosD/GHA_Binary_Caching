@@ -10,15 +10,13 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: true
-      - run: ./vcpkg-exe --version
+      - run: ./vcpkg/vcpkg --version
       - name: Export ACTION_RUNTIME_TOKEN
         uses: actions/github-script@v6
         with:
           script: |
             core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
             core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
-      - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install Port
         run: |
           ./vcpkg/vcpkg install zlib --binarysource="clear;x-gha,readwrite"
-
