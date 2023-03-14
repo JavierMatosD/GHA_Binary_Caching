@@ -24,8 +24,8 @@ jobs:
           ## Don't fail workflow
           echo "Deleting caches..."
           do
-            gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
-            echo "deleted $cacheKey"
+              gh actions-cache delete $cacheKey -R $REPO -B $BRANCH --confirm
+              echo "deleted $cacheKey"
           done
           echo "done
         env:
