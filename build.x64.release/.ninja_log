@@ -149,3 +149,6 @@
 357182	357830	1679085053694084662	CMakeFiles/locale-resources.dir/__cmrc_locale-resources/intermediate/locales/messages.zh-Hant.json.cpp.o	cf3fb241e20ab51f
 357830	357883	1679085053742084547	liblocale-resources.a	f8a4443901d8657b
 357884	358316	1679085054178083502	vcpkg	810e42466b20b421
+0	11	0	/workspaces/GHA_Binary_Caching/build.x64.release/CMakeFiles/cmake.verify_globs	bc3c349f45f5782b
+4	8492	1679086001859861865	CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o	5a1127ad08ae60d5
+8492	8897	1679086002263860938	vcpkg	810e42466b20b421
