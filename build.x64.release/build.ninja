@@ -98,7 +98,7 @@ build generate-message-map: phony CMakeFiles/generate-message-map vcpkg
 build cmake_object_order_depends_target_vcpkg: phony || cmake_object_order_depends_target_vcpkglib
 
 build CMakeFiles/vcpkg.dir/src/vcpkg.cpp.o: CXX_COMPILER__vcpkg /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg.cpp || cmake_object_order_depends_target_vcpkg
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkg.dir/src/vcpkg.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -115,7 +115,7 @@ build CMakeFiles/vcpkg.dir/src/vcpkg.cpp.o: CXX_COMPILER__vcpkg /workspaces/GHA_
 #############################################
 # Link the executable vcpkg
 
-build vcpkg: CXX_EXECUTABLE_LINKER__vcpkg CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/graphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.print.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zbootstrap-standalone.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.buildtype.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o CMakeFiles/vcpkg.dir/src/vcpkg.cpp.o | _deps/fmt-build/libfmt.a liblocale-resources.a /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg.manifest || vcpkglib
+build vcpkg: CXX_EXECUTABLE_LINKER__vcpkg CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cmd-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/message_sinks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/bundlesettings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.applocal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.bootstrap-standalone.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o CMakeFiles/vcpkg.dir/src/vcpkg.cpp.o | _deps/fmt-build/libfmt.a liblocale-resources.a /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg.manifest || vcpkglib
   FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = _deps/fmt-build/libfmt.a  liblocale-resources.a  -pthread
   MANIFESTS = /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg.manifest
@@ -154,7 +154,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 build cmake_object_order_depends_target_vcpkglib: phony || cmake_object_order_depends_target_fmt cmake_object_order_depends_target_locale-resources
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/checks.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -164,7 +164,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/chrono.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -173,8 +173,18 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/vcpkglib.dir/src/vcpkg/base/cmd-parser.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/cmd-parser.cpp || cmake_object_order_depends_target_vcpkglib
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
+  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/cmd-parser.cpp.o.d
+  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
+  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
+  OBJECT_DIR = CMakeFiles/vcpkglib.dir
+  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg/base
+  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
+  TARGET_PDB = ""
+
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/cofffilereader.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -184,7 +194,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/downloads.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -194,7 +204,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o: CXX_COMPILER__vcpk
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/files.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -204,7 +214,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/git.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -213,18 +223,8 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o: CXX_COMPILER__vcpkglib /
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
-build CMakeFiles/vcpkglib.dir/src/vcpkg/base/graphs.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/graphs.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
-  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/graphs.cpp.o.d
-  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
-  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
-  OBJECT_DIR = CMakeFiles/vcpkglib.dir
-  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg/base
-  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
-  TARGET_PDB = ""
-
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/hash.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -234,7 +234,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o: CXX_COMPILER__vcpkglib 
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/json.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -243,8 +243,18 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o: CXX_COMPILER__vcpkglib 
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/vcpkglib.dir/src/vcpkg/base/message_sinks.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/message_sinks.cpp || cmake_object_order_depends_target_vcpkglib
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
+  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/message_sinks.cpp.o.d
+  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
+  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
+  OBJECT_DIR = CMakeFiles/vcpkglib.dir
+  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg/base
+  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
+  TARGET_PDB = ""
+
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/messages.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -254,7 +264,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/parse.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -264,7 +274,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/strings.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -274,7 +284,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/stringview.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -284,7 +294,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/system.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -294,7 +304,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/system.mac.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -303,18 +313,8 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o: CXX_COMPILER__vcp
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
-build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.print.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/system.print.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
-  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.print.cpp.o.d
-  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
-  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
-  OBJECT_DIR = CMakeFiles/vcpkglib.dir
-  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg/base
-  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
-  TARGET_PDB = ""
-
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/system.process.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -324,7 +324,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/system.proxy.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -334,7 +334,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o: CXX_COMPILER__v
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/uint128.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -344,7 +344,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/unicode.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -354,7 +354,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/uuid.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -364,7 +364,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o: CXX_COMPILER__vcpkglib 
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/base/xmlserializer.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -374,7 +374,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o: CXX_COMPILER__
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/archives.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -384,7 +384,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o: CXX_COMPILER__vcpkglib /
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/binarycaching.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -394,7 +394,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/binaryparagraph.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -404,7 +404,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/build.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -414,7 +414,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o: CXX_COMPILER__vcpkglib /wor
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/buildenvironment.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -423,8 +423,18 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o: CXX_COMPILER__vc
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/vcpkglib.dir/src/vcpkg/bundlesettings.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/bundlesettings.cpp || cmake_object_order_depends_target_vcpkglib
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
+  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/bundlesettings.cpp.o.d
+  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
+  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
+  OBJECT_DIR = CMakeFiles/vcpkglib.dir
+  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg
+  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
+  TARGET_PDB = ""
+
 build CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/cgroup-parser.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -434,7 +444,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/ci-baseline.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -444,7 +454,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/cmakevars.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -454,7 +464,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o: CXX_COMPILER__vcpkglib 
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.acquire-project.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -464,7 +474,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o: CXX_COMP
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.acquire.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -474,7 +484,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.activate.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -484,7 +494,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o: CXX_COMPILER__v
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.add-version.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -494,7 +504,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o: CXX_COMPILER
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.add.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -503,8 +513,18 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.applocal.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.applocal.cpp || cmake_object_order_depends_target_vcpkglib
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
+  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.applocal.cpp.o.d
+  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
+  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
+  OBJECT_DIR = CMakeFiles/vcpkglib.dir
+  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg
+  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
+  TARGET_PDB = ""
+
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.autocomplete.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -513,8 +533,18 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o: CXX_COMPILE
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
+build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.bootstrap-standalone.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.bootstrap-standalone.cpp || cmake_object_order_depends_target_vcpkglib
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
+  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.bootstrap-standalone.cpp.o.d
+  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
+  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
+  OBJECT_DIR = CMakeFiles/vcpkglib.dir
+  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg
+  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
+  TARGET_PDB = ""
+
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.buildexternal.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -524,7 +554,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o: CXX_COMPIL
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.cache.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -534,7 +564,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o: CXX_COMPILER__vcpk
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.check-support.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -544,7 +574,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o: CXX_COMPIL
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.ci.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -554,7 +584,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.ciclean.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -564,7 +594,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.civerifyversions.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -574,7 +604,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o: CXX_COM
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.contact.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -584,7 +614,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -594,7 +624,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o: CXX_COMPILER__vcpkglib /
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.create.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -604,7 +634,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.deactivate.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -614,7 +644,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.dependinfo.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -624,7 +654,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.edit.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -634,7 +664,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.env.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -644,7 +674,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.fetch.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -654,7 +684,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o: CXX_COMPILER__vcpk
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.find.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -664,7 +694,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.format-manifest.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -674,7 +704,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o: CXX_COMP
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.generate-message-map.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -684,7 +714,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o: CXX
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.generate-msbuild-props.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -694,7 +724,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o: C
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.hash.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -704,7 +734,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.info.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -714,7 +744,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.init-registry.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -724,7 +754,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o: CXX_COMPIL
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.integrate.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -734,7 +764,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o: CXX_COMPILER__
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.list.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -744,7 +774,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.new.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -754,7 +784,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.owns.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -764,7 +794,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.portsdiff.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -774,7 +804,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o: CXX_COMPILER__
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.regenerate.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -784,7 +814,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.search.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -794,7 +824,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.setinstalled.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -804,7 +834,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o: CXX_COMPILE
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.update-baseline.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -814,7 +844,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o: CXX_COMP
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.upgrade.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -824,7 +854,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.upload-metrics.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -834,7 +864,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o: CXX_COMPI
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.use.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -844,7 +874,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.version.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -854,7 +884,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.xdownload.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -864,7 +894,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o: CXX_COMPILER__
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.xvsinstances.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -873,18 +903,8 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o: CXX_COMPILE
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
-build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zbootstrap-standalone.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.zbootstrap-standalone.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
-  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zbootstrap-standalone.cpp.o.d
-  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
-  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
-  OBJECT_DIR = CMakeFiles/vcpkglib.dir
-  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg
-  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
-  TARGET_PDB = ""
-
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.zce.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -894,7 +914,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.zpreregistertelemetry.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -904,7 +924,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o: CX
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/commands.zprintconfig.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -914,7 +934,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o: CXX_COMPILE
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/configuration.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -924,7 +944,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/configure-environment.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -934,7 +954,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o: CXX_COMPILE
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/dependencies.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -944,7 +964,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/export.chocolatey.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -954,7 +974,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o: CXX_COMPILER__v
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/export.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -964,7 +984,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o: CXX_COMPILER__vcpkglib /wo
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/export.ifw.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -974,7 +994,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/export.prefab.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -984,7 +1004,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/globalstate.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -994,7 +1014,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/help.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1004,7 +1024,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o: CXX_COMPILER__vcpkglib /work
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/input.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1014,7 +1034,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o: CXX_COMPILER__vcpkglib /wor
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/install.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1024,7 +1044,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o: CXX_COMPILER__vcpkglib /w
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/metrics.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1034,7 +1054,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o: CXX_COMPILER__vcpkglib /w
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/packagespec.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1044,7 +1064,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o: CXX_COMPILER__vcpkgli
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/paragraphs.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1054,7 +1074,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/platform-expression.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1064,7 +1084,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o: CXX_COMPILER_
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/portfileprovider.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1073,18 +1093,8 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o: CXX_COMPILER__vc
   TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
   TARGET_PDB = ""
 
-build CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.buildtype.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/postbuildlint.buildtype.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
-  DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.buildtype.cpp.o.d
-  FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
-  INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
-  OBJECT_DIR = CMakeFiles/vcpkglib.dir
-  OBJECT_FILE_DIR = CMakeFiles/vcpkglib.dir/src/vcpkg
-  TARGET_COMPILE_PDB = CMakeFiles/vcpkglib.dir/
-  TARGET_PDB = ""
-
 build CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/postbuildlint.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1094,7 +1104,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o: CXX_COMPILER__vcpkg
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/registries.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1104,7 +1114,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/remove.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1114,7 +1124,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o: CXX_COMPILER__vcpkglib /wo
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/sourceparagraph.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1124,7 +1134,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/spdx.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1134,7 +1144,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o: CXX_COMPILER__vcpkglib /work
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/statusparagraph.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1144,7 +1154,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o: CXX_COMPILER__vcp
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/statusparagraphs.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1154,7 +1164,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o: CXX_COMPILER__vc
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/tools.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1164,7 +1174,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o: CXX_COMPILER__vcpkglib /wor
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/triplet.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1174,7 +1184,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o: CXX_COMPILER__vcpkglib /w
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/update.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1184,7 +1194,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o: CXX_COMPILER__vcpkglib /wo
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/vcpkgcmdarguments.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1194,7 +1204,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o: CXX_COMPILER__v
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/vcpkglib.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1204,7 +1214,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o: CXX_COMPILER__vcpkglib /
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/vcpkgpaths.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1214,7 +1224,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o: CXX_COMPILER__vcpkglib
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/versiondeserializers.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1224,7 +1234,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o: CXX_COMPILER
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/versions.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1234,7 +1244,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o: CXX_COMPILER__vcpkglib /
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/visualstudio.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1244,7 +1254,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o: CXX_COMPILER__vcpkgl
   TARGET_PDB = ""
 
 build CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o: CXX_COMPILER__vcpkglib /workspaces/GHA_Binary_Caching/vcpkg-tool/src/vcpkg/xunitwriter.cpp || cmake_object_order_depends_target_vcpkglib
-  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash
+  DEFINES = -DVCPKG_BASE_VERSION=2999-12-31 -DVCPKG_VERSION=unknownhash -D_FILE_OFFSET_BITS=64
   DEP_FILE = CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o.d
   FLAGS = -O3 -DNDEBUG   -include /workspaces/GHA_Binary_Caching/vcpkg-tool/include/pch.h -pthread -std=c++17
   INCLUDES = -I/workspaces/GHA_Binary_Caching/vcpkg-tool/include -I_deps/fmt-src/include -I_cmrc/include
@@ -1258,7 +1268,7 @@ build CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o: CXX_COMPILER__vcpkgli
 #############################################
 # Object library vcpkglib
 
-build vcpkglib: phony CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/graphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.print.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zbootstrap-standalone.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.buildtype.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o
+build vcpkglib: phony CMakeFiles/vcpkglib.dir/src/vcpkg/base/checks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/chrono.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cmd-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/cofffilereader.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/downloads.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/files.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/git.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/json.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/message_sinks.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/messages.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/parse.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/strings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/stringview.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.mac.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.process.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/system.proxy.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uint128.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/unicode.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/uuid.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/base/xmlserializer.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/archives.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/binaryparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/build.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/buildenvironment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/bundlesettings.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cgroup-parser.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/ci-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/cmakevars.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire-project.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.acquire.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.activate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add-version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.add.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.applocal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.autocomplete.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.bootstrap-standalone.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.buildexternal.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cache.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.check-support.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ci.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.ciclean.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.civerifyversions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.contact.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.create.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.deactivate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.dependinfo.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.edit.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.env.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.fetch.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.find.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.format-manifest.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-message-map.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.generate-msbuild-props.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.hash.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.info.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.init-registry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.integrate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.list.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.new.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.owns.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.portsdiff.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.regenerate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.search.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.setinstalled.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.update-baseline.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upgrade.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.upload-metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.use.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.version.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xdownload.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.xvsinstances.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zce.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zpreregistertelemetry.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/commands.zprintconfig.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configuration.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/configure-environment.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/dependencies.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.chocolatey.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.ifw.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/export.prefab.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/globalstate.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/help.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/input.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/install.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/metrics.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/packagespec.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/paragraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/platform-expression.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/portfileprovider.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/postbuildlint.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/registries.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/remove.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/sourceparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/spdx.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraph.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/statusparagraphs.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/tools.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/triplet.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/update.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgcmdarguments.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkglib.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/vcpkgpaths.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versiondeserializers.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/versions.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/visualstudio.cpp.o CMakeFiles/vcpkglib.dir/src/vcpkg/xunitwriter.cpp.o
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target locale-resources
@@ -1425,8 +1435,8 @@ build liblocale-resources.a: CXX_STATIC_LIBRARY_LINKER__locale-resources CMakeFi
 #############################################
 # Custom command for CMakeFiles/generate-message-map
 
-build CMakeFiles/generate-message-map: CUSTOM_COMMAND || _deps/fmt-build/libfmt.a liblocale-resources.a vcpkg vcpkglib
-  COMMAND = cd /workspaces/GHA_Binary_Caching/vcpkg-tool && /workspaces/GHA_Binary_Caching/build.x64.release/vcpkg x-generate-default-message-map locales/messages.json
+build CMakeFiles/generate-message-map: CUSTOM_COMMAND /workspaces/GHA_Binary_Caching/vcpkg-tool/ce/ce/locales/messages.json || _deps/fmt-build/libfmt.a liblocale-resources.a vcpkg vcpkglib
+  COMMAND = cd /workspaces/GHA_Binary_Caching/vcpkg-tool && /workspaces/GHA_Binary_Caching/build.x64.release/vcpkg x-generate-default-message-map locales/messages.json /workspaces/GHA_Binary_Caching/vcpkg-tool/ce/ce/locales/messages.json
   DESC = Update locales/messages.json
 
 
