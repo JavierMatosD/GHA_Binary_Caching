@@ -1,11 +1,11 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /workspaces/GHA_Binary_Caching/build.x64.release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_5d660 && [1/2] Building CXX object CMakeFiles/cmTC_5d660.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5d660
-FAILED: cmTC_5d660 
-: && /usr/bin/c++  -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_5d660.dir/src.cxx.o  -o cmTC_5d660   && :
-/usr/bin/ld: CMakeFiles/cmTC_5d660.dir/src.cxx.o: in function `main':
+Run Build Command(s):/usr/bin/ninja cmTC_b31c8 && [1/2] Building CXX object CMakeFiles/cmTC_b31c8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b31c8
+FAILED: cmTC_b31c8 
+: && /usr/bin/c++  -DCMAKE_HAVE_LIBC_PTHREAD   CMakeFiles/cmTC_b31c8.dir/src.cxx.o  -o cmTC_b31c8   && :
+/usr/bin/ld: CMakeFiles/cmTC_b31c8.dir/src.cxx.o: in function `main':
 src.cxx:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
