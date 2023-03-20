@@ -3,4 +3,4 @@
 	url = https://github.com/microsoft/vcpkg
 [submodule "vcpkg-tool"]
 	path = vcpkg-tool
-	url = https://github.com/JavierMatosD/vcpkg-tool
+	url = https://github.com/microsoft/vcpkg-tool
