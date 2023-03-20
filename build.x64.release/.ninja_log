@@ -152,3 +152,6 @@
 0	12	0	/workspaces/GHA_Binary_Caching/build.x64.release/CMakeFiles/cmake.verify_globs	bc3c349f45f5782b
 4	8499	1679345857568551817	CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o	5a1127ad08ae60d5
 8499	8876	1679345857944549372	vcpkg	810e42466b20b421
+0	13	0	/workspaces/GHA_Binary_Caching/build.x64.release/CMakeFiles/cmake.verify_globs	bc3c349f45f5782b
+6	8605	1679346384845277901	CMakeFiles/vcpkglib.dir/src/vcpkg/binarycaching.cpp.o	5a1127ad08ae60d5
+8605	8971	1679346385209276546	vcpkg	810e42466b20b421
