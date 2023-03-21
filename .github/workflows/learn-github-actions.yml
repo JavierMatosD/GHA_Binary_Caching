@@ -20,4 +20,4 @@ jobs:
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install 7zip (Expect a Cache Hit)
         run: |
-          ./vcpkg/vcpkg install 7zip --binarysource="clear;x-gha,readwrite" --debug
+          ./vcpkg/vcpkg install 7zip --binarysource="clear;x-gha,readwrite"
