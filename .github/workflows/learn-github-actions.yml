@@ -20,4 +20,4 @@ jobs:
       - run: cp ./vcpkg-exe vcpkg/vcpkg
       - name: Install Zlib (expect a cache hit)
         run: |
-          ./vcpkg/vcpkg install zlib --binarysource="clear;x-gha,readwrite"
+          ./vcpkg/vcpkg install zlib --binarysource="clear;x-gha,readwrite" --debug
